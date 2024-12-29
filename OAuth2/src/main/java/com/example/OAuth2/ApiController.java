@@ -14,10 +14,10 @@ public class ApiController {
 
     @GetMapping("/")
     public String home(@AuthenticationPrincipal OidcUser principal, Model model) {
-//        if (principal != null) {
-//            model.addAttribute("user", principal);
-//        }
-        return "Welcome to OAuth"; // Ensure "home.html" exists in `src/main/resources/templates`
+        if (principal != null) {
+            model.addAttribute("user", principal);
+        }
+        return "home"; // Ensure "home.html" exists in `src/main/resources/templates`
     }
 
     @GetMapping("/logout")
