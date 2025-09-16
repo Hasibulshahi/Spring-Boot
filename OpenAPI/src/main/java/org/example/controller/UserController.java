@@ -5,9 +5,11 @@ import com.example.demo.generated.model.UserRequest;
 import com.example.demo.generated.model.UserResponse;
 import org.example.service.UserService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
+@Controller
 public class UserController implements UserApi {
 
     private final UserService userService;

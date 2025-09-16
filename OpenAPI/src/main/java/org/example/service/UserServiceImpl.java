@@ -2,6 +2,7 @@ package org.example.service;
 
 import com.example.demo.generated.model.UserRequest;
 import com.example.demo.generated.model.UserResponse;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Service
 public class UserServiceImpl implements UserService {
 
     private final Map<Long, UserResponse> users = new HashMap<>();
