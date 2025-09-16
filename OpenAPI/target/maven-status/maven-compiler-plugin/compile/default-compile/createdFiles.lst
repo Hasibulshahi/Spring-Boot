@@ -1,0 +1,7 @@
+com\example\demo\generated\api\UserApi.class
+org\example\Main.class
+com\example\demo\generated\model\UserRequest.class
+com\example\demo\generated\model\UserResponse.class
+com\example\demo\generated\api\ApiUtil.class
+org\example\service\UserService.class
+org\example\service\UserServiceImpl.class
